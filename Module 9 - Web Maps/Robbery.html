@@ -1,0 +1,2770 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b63cdd9ebbe94042d5ca20273e5d01bd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b63cdd9ebbe94042d5ca20273e5d01bd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b63cdd9ebbe94042d5ca20273e5d01bd = L.map(
+                "map_b63cdd9ebbe94042d5ca20273e5d01bd",
+                {
+                    center: [37.764709937996024, -122.4212354645289],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1000,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+
+            
+
+        
+    
+            var tile_layer_227d25055c7687371e456a032fbedd77 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var marker_12335ac160d6f91309bd0225021c2acf = L.marker(
+                [37.72224034731027, -122.44379303740972],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_03b2105eadea6a47f06761acaddcb23e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_12335ac160d6f91309bd0225021c2acf.setIcon(icon_03b2105eadea6a47f06761acaddcb23e);
+        
+    
+        var popup_d17ff2afb3e839af3fe8ffd28e8d8e7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6e20dfbd7093947f6aace854b087a8e = $(`<div id="html_b6e20dfbd7093947f6aace854b087a8e" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_d17ff2afb3e839af3fe8ffd28e8d8e7f.setContent(html_b6e20dfbd7093947f6aace854b087a8e);
+            
+        
+
+        marker_12335ac160d6f91309bd0225021c2acf.bindPopup(popup_d17ff2afb3e839af3fe8ffd28e8d8e7f)
+        ;
+
+        
+    
+    
+            var marker_ff25eaaf73398d95092e82c4ea6192bc = L.marker(
+                [37.73606117177687, -122.42446626401404],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_3fe14bf4f260c180d091b2cf84d46abe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ff25eaaf73398d95092e82c4ea6192bc.setIcon(icon_3fe14bf4f260c180d091b2cf84d46abe);
+        
+    
+        var popup_aa2df831eb997639f69ca109783de6a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b47ecb83b2a14a4a823a7fe4625805b = $(`<div id="html_1b47ecb83b2a14a4a823a7fe4625805b" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_aa2df831eb997639f69ca109783de6a8.setContent(html_1b47ecb83b2a14a4a823a7fe4625805b);
+            
+        
+
+        marker_ff25eaaf73398d95092e82c4ea6192bc.bindPopup(popup_aa2df831eb997639f69ca109783de6a8)
+        ;
+
+        
+    
+    
+            var marker_d73a13687e639e24f4a05f8e057c53b2 = L.marker(
+                [37.777699658507856, -122.4046055071112],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_ad6345b4380b2db3bf6dc825baf7813a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d73a13687e639e24f4a05f8e057c53b2.setIcon(icon_ad6345b4380b2db3bf6dc825baf7813a);
+        
+    
+        var popup_982a1095c903aae678cf0690d3c1a306 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d572651f592780e3062c5122b39998b = $(`<div id="html_6d572651f592780e3062c5122b39998b" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_982a1095c903aae678cf0690d3c1a306.setContent(html_6d572651f592780e3062c5122b39998b);
+            
+        
+
+        marker_d73a13687e639e24f4a05f8e057c53b2.bindPopup(popup_982a1095c903aae678cf0690d3c1a306)
+        ;
+
+        
+    
+    
+            var marker_8c99ece6e0434c4eddff0a534f6e2824 = L.marker(
+                [37.7428968146528, -122.3970013283792],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_de360d71cc6eb98fd10b082b9942ead4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8c99ece6e0434c4eddff0a534f6e2824.setIcon(icon_de360d71cc6eb98fd10b082b9942ead4);
+        
+    
+        var popup_8852eb9ccf790647d19d0c575211883a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0bcf732553b5ae820e4769bd2d8a8c9 = $(`<div id="html_d0bcf732553b5ae820e4769bd2d8a8c9" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_8852eb9ccf790647d19d0c575211883a.setContent(html_d0bcf732553b5ae820e4769bd2d8a8c9);
+            
+        
+
+        marker_8c99ece6e0434c4eddff0a534f6e2824.bindPopup(popup_8852eb9ccf790647d19d0c575211883a)
+        ;
+
+        
+    
+    
+            var marker_9ef2d0357941ac12909e8a18f9dd5607 = L.marker(
+                [37.78239164108496, -122.44730151526936],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_51f3d1717c5a988ad04f8f40390dce77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9ef2d0357941ac12909e8a18f9dd5607.setIcon(icon_51f3d1717c5a988ad04f8f40390dce77);
+        
+    
+        var popup_ebe2ebbe8c39d4df88a54df190d74dbb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8efe3d46c6067fea72a6db41804347df = $(`<div id="html_8efe3d46c6067fea72a6db41804347df" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_ebe2ebbe8c39d4df88a54df190d74dbb.setContent(html_8efe3d46c6067fea72a6db41804347df);
+            
+        
+
+        marker_9ef2d0357941ac12909e8a18f9dd5607.bindPopup(popup_ebe2ebbe8c39d4df88a54df190d74dbb)
+        ;
+
+        
+    
+    
+            var marker_7943526ea883a0cca037707262ba7aa6 = L.marker(
+                [37.76560583760297, -122.41048669029504],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_d139d170670cddb27e6fd8be2bbaeada = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7943526ea883a0cca037707262ba7aa6.setIcon(icon_d139d170670cddb27e6fd8be2bbaeada);
+        
+    
+        var popup_8e561aa782c3e461cfd1b662df444b48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c26232c81b6c2b65c4e75251379dbbaf = $(`<div id="html_c26232c81b6c2b65c4e75251379dbbaf" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_8e561aa782c3e461cfd1b662df444b48.setContent(html_c26232c81b6c2b65c4e75251379dbbaf);
+            
+        
+
+        marker_7943526ea883a0cca037707262ba7aa6.bindPopup(popup_8e561aa782c3e461cfd1b662df444b48)
+        ;
+
+        
+    
+    
+            var marker_adc5025e1959b78539991b262a551fb3 = L.marker(
+                [37.75370309270368, -122.42081213698864],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_84b2cd59e8e00f187a4091a1ff1788a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_adc5025e1959b78539991b262a551fb3.setIcon(icon_84b2cd59e8e00f187a4091a1ff1788a5);
+        
+    
+        var popup_261063a8c820f985164fbff8d30727d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59208a39ab8124f9a675c622f9344539 = $(`<div id="html_59208a39ab8124f9a675c622f9344539" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_261063a8c820f985164fbff8d30727d8.setContent(html_59208a39ab8124f9a675c622f9344539);
+            
+        
+
+        marker_adc5025e1959b78539991b262a551fb3.bindPopup(popup_261063a8c820f985164fbff8d30727d8)
+        ;
+
+        
+    
+    
+            var marker_a067314d2ea7656788af32ad39d9f81d = L.marker(
+                [37.743608582140304, -122.43768292630256],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_c9c342276829a7091f24beade285bfbc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a067314d2ea7656788af32ad39d9f81d.setIcon(icon_c9c342276829a7091f24beade285bfbc);
+        
+    
+        var popup_caeecfa34f8abaf1f7e681d4c2765144 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1fa88edb1dd97c395a8567397b0a9d8c = $(`<div id="html_1fa88edb1dd97c395a8567397b0a9d8c" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_caeecfa34f8abaf1f7e681d4c2765144.setContent(html_1fa88edb1dd97c395a8567397b0a9d8c);
+            
+        
+
+        marker_a067314d2ea7656788af32ad39d9f81d.bindPopup(popup_caeecfa34f8abaf1f7e681d4c2765144)
+        ;
+
+        
+    
+    
+            var marker_f1c4f583ceb629970d6ec874e8d8d4e5 = L.marker(
+                [37.77009807899048, -122.4537262284452],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_0bd052306c4f4f1568d49fcdaaeb5acd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f1c4f583ceb629970d6ec874e8d8d4e5.setIcon(icon_0bd052306c4f4f1568d49fcdaaeb5acd);
+        
+    
+        var popup_317ccfad7abe88580db43994ef9d4633 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_500f69401555bd8a17ba93a41b75ddc1 = $(`<div id="html_500f69401555bd8a17ba93a41b75ddc1" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_317ccfad7abe88580db43994ef9d4633.setContent(html_500f69401555bd8a17ba93a41b75ddc1);
+            
+        
+
+        marker_f1c4f583ceb629970d6ec874e8d8d4e5.bindPopup(popup_317ccfad7abe88580db43994ef9d4633)
+        ;
+
+        
+    
+    
+            var marker_90c378b4e7cf7824adc53d83adb96817 = L.marker(
+                [37.747553211710034, -122.40957172824132],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_2117909e40c62dd36f4d81f11bca8bb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_90c378b4e7cf7824adc53d83adb96817.setIcon(icon_2117909e40c62dd36f4d81f11bca8bb4);
+        
+    
+        var popup_fc618e86557daa6cafac3ed54f4cf54e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89489b4bb08c9ddc016c22ad7f9f6357 = $(`<div id="html_89489b4bb08c9ddc016c22ad7f9f6357" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_fc618e86557daa6cafac3ed54f4cf54e.setContent(html_89489b4bb08c9ddc016c22ad7f9f6357);
+            
+        
+
+        marker_90c378b4e7cf7824adc53d83adb96817.bindPopup(popup_fc618e86557daa6cafac3ed54f4cf54e)
+        ;
+
+        
+    
+    
+            var marker_e2f4c9748b5f6dda8de9079c281d9e87 = L.marker(
+                [37.72377502359837, -122.40310583018965],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_c243553f8335e95e42488bff5970d1c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e2f4c9748b5f6dda8de9079c281d9e87.setIcon(icon_c243553f8335e95e42488bff5970d1c3);
+        
+    
+        var popup_5c9249309d60dd78e7707ee46fbe5e6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e623a7b048e1221b7749f057dfb7245 = $(`<div id="html_6e623a7b048e1221b7749f057dfb7245" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_5c9249309d60dd78e7707ee46fbe5e6b.setContent(html_6e623a7b048e1221b7749f057dfb7245);
+            
+        
+
+        marker_e2f4c9748b5f6dda8de9079c281d9e87.bindPopup(popup_5c9249309d60dd78e7707ee46fbe5e6b)
+        ;
+
+        
+    
+    
+            var marker_cb230123b405a54781037d57a3720698 = L.marker(
+                [37.76491737717617, -122.42188644715362],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_f01e2b13c92bb71d0da58fde86eb655c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cb230123b405a54781037d57a3720698.setIcon(icon_f01e2b13c92bb71d0da58fde86eb655c);
+        
+    
+        var popup_fcb6e8f351c7953bfad37d28af70516c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d7a885e15e9ea3f19c29724f4551045 = $(`<div id="html_3d7a885e15e9ea3f19c29724f4551045" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_fcb6e8f351c7953bfad37d28af70516c.setContent(html_3d7a885e15e9ea3f19c29724f4551045);
+            
+        
+
+        marker_cb230123b405a54781037d57a3720698.bindPopup(popup_fcb6e8f351c7953bfad37d28af70516c)
+        ;
+
+        
+    
+    
+            var marker_6fb93c712ad3c7f897ba054e54f1f4fe = L.marker(
+                [37.75428676962897, -122.411120125642],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_c008d0850ca5bedf5d8b240ecb959b82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6fb93c712ad3c7f897ba054e54f1f4fe.setIcon(icon_c008d0850ca5bedf5d8b240ecb959b82);
+        
+    
+        var popup_36d832ccfe2788c575166a319dc19cdf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_498c57c626c210fc6d9406a5489d446d = $(`<div id="html_498c57c626c210fc6d9406a5489d446d" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_36d832ccfe2788c575166a319dc19cdf.setContent(html_498c57c626c210fc6d9406a5489d446d);
+            
+        
+
+        marker_6fb93c712ad3c7f897ba054e54f1f4fe.bindPopup(popup_36d832ccfe2788c575166a319dc19cdf)
+        ;
+
+        
+    
+    
+            var marker_f617e3272cb5ce8e8a18979800b931dc = L.marker(
+                [37.76505133632968, -122.41966897380142],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_8a81822716475e823f679ce2b4c7a85a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f617e3272cb5ce8e8a18979800b931dc.setIcon(icon_8a81822716475e823f679ce2b4c7a85a);
+        
+    
+        var popup_a7b57e5a5ad9c1d803e3c0c801cc2237 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac6ab7119f5bcf4eccf00b89aa361845 = $(`<div id="html_ac6ab7119f5bcf4eccf00b89aa361845" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_a7b57e5a5ad9c1d803e3c0c801cc2237.setContent(html_ac6ab7119f5bcf4eccf00b89aa361845);
+            
+        
+
+        marker_f617e3272cb5ce8e8a18979800b931dc.bindPopup(popup_a7b57e5a5ad9c1d803e3c0c801cc2237)
+        ;
+
+        
+    
+    
+            var marker_be13f52c08ac5045885791674b30b291 = L.marker(
+                [37.74910650517882, -122.4170488462938],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_62cd73fb16d0c3bd977515e85e227074 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_be13f52c08ac5045885791674b30b291.setIcon(icon_62cd73fb16d0c3bd977515e85e227074);
+        
+    
+        var popup_61eea9b001c730dec7b248554c8e37cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7a9dbe3366dabeee2a1e5f8cd721356 = $(`<div id="html_d7a9dbe3366dabeee2a1e5f8cd721356" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_61eea9b001c730dec7b248554c8e37cf.setContent(html_d7a9dbe3366dabeee2a1e5f8cd721356);
+            
+        
+
+        marker_be13f52c08ac5045885791674b30b291.bindPopup(popup_61eea9b001c730dec7b248554c8e37cf)
+        ;
+
+        
+    
+    
+            var marker_429bf101eb3538b953b54087b3dd6126 = L.marker(
+                [37.769526043647296, -122.45071018189664],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_0c27a3821b912c7e52f104feccd010e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_429bf101eb3538b953b54087b3dd6126.setIcon(icon_0c27a3821b912c7e52f104feccd010e3);
+        
+    
+        var popup_a177e3ccd91d93303bb2aa20169b3eb6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55d4d3b1cbe358657d2fc209b42909a5 = $(`<div id="html_55d4d3b1cbe358657d2fc209b42909a5" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_a177e3ccd91d93303bb2aa20169b3eb6.setContent(html_55d4d3b1cbe358657d2fc209b42909a5);
+            
+        
+
+        marker_429bf101eb3538b953b54087b3dd6126.bindPopup(popup_a177e3ccd91d93303bb2aa20169b3eb6)
+        ;
+
+        
+    
+    
+            var marker_5c1ed64aaea8b07d33d83ec3ab95e63b = L.marker(
+                [37.75543693568604, -122.41874757531652],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_e0171b78ac254c84086978aebe6a079c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5c1ed64aaea8b07d33d83ec3ab95e63b.setIcon(icon_e0171b78ac254c84086978aebe6a079c);
+        
+    
+        var popup_982e4efe3d603d1dddb60b44d379242d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7dc3c4b0967cb91d5ae5bfea7f5adc49 = $(`<div id="html_7dc3c4b0967cb91d5ae5bfea7f5adc49" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_982e4efe3d603d1dddb60b44d379242d.setContent(html_7dc3c4b0967cb91d5ae5bfea7f5adc49);
+            
+        
+
+        marker_5c1ed64aaea8b07d33d83ec3ab95e63b.bindPopup(popup_982e4efe3d603d1dddb60b44d379242d)
+        ;
+
+        
+    
+    
+            var marker_2379180579644fedd884f707094ed1cd = L.marker(
+                [37.74618268213951, -122.41950511517184],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_f39233f0211a469340e52f8e812c3134 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2379180579644fedd884f707094ed1cd.setIcon(icon_f39233f0211a469340e52f8e812c3134);
+        
+    
+        var popup_3bf5209b5a7ceac6f1c95fa09ea5ee13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a87dfc34690085a85471720d1caaf938 = $(`<div id="html_a87dfc34690085a85471720d1caaf938" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_3bf5209b5a7ceac6f1c95fa09ea5ee13.setContent(html_a87dfc34690085a85471720d1caaf938);
+            
+        
+
+        marker_2379180579644fedd884f707094ed1cd.bindPopup(popup_3bf5209b5a7ceac6f1c95fa09ea5ee13)
+        ;
+
+        
+    
+    
+            var marker_ede1ba835f7cbd099b235f59f6c3353e = L.marker(
+                [37.74960063964786, -122.40882528116092],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_051f662b8fbdcab5d3b43d60f57ae4f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ede1ba835f7cbd099b235f59f6c3353e.setIcon(icon_051f662b8fbdcab5d3b43d60f57ae4f5);
+        
+    
+        var popup_684ea4a6176b0e8f6e8fb32dda9b6c07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d927a62495626d30d87896f995ba4bd = $(`<div id="html_5d927a62495626d30d87896f995ba4bd" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_684ea4a6176b0e8f6e8fb32dda9b6c07.setContent(html_5d927a62495626d30d87896f995ba4bd);
+            
+        
+
+        marker_ede1ba835f7cbd099b235f59f6c3353e.bindPopup(popup_684ea4a6176b0e8f6e8fb32dda9b6c07)
+        ;
+
+        
+    
+    
+            var marker_89622c30d44dd9413c2c46ca7733b8f0 = L.marker(
+                [37.720827144605884, -122.43558471453628],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_b1d8fd3c44bdfa011512cc0a259eef17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_89622c30d44dd9413c2c46ca7733b8f0.setIcon(icon_b1d8fd3c44bdfa011512cc0a259eef17);
+        
+    
+        var popup_8f5945503f9f7bbd92fc7ae486870daf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_568cf72522ef65c36094a959974c8e49 = $(`<div id="html_568cf72522ef65c36094a959974c8e49" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_8f5945503f9f7bbd92fc7ae486870daf.setContent(html_568cf72522ef65c36094a959974c8e49);
+            
+        
+
+        marker_89622c30d44dd9413c2c46ca7733b8f0.bindPopup(popup_8f5945503f9f7bbd92fc7ae486870daf)
+        ;
+
+        
+    
+    
+            var marker_fe824574449b51fad3f7c18f78eca2ff = L.marker(
+                [37.7843492684367, -122.4093091807476],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_b38af3250318acf6d061fb6253925306 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fe824574449b51fad3f7c18f78eca2ff.setIcon(icon_b38af3250318acf6d061fb6253925306);
+        
+    
+        var popup_5a4007464e8809a5013d7d6554644f2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75330c3b0f818eea41f8f0e1a0d8e9ce = $(`<div id="html_75330c3b0f818eea41f8f0e1a0d8e9ce" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_5a4007464e8809a5013d7d6554644f2a.setContent(html_75330c3b0f818eea41f8f0e1a0d8e9ce);
+            
+        
+
+        marker_fe824574449b51fad3f7c18f78eca2ff.bindPopup(popup_5a4007464e8809a5013d7d6554644f2a)
+        ;
+
+        
+    
+    
+            var marker_3aeddcd2f03077f5c0b34a918950805f = L.marker(
+                [37.78640961281089, -122.40803623744476],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_bc545db1f54778c45999480d8bc1656f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3aeddcd2f03077f5c0b34a918950805f.setIcon(icon_bc545db1f54778c45999480d8bc1656f);
+        
+    
+        var popup_44deac8f4ffd4438166d959cd051837d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e94fea965df62e469d5c92d2c3b07522 = $(`<div id="html_e94fea965df62e469d5c92d2c3b07522" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_44deac8f4ffd4438166d959cd051837d.setContent(html_e94fea965df62e469d5c92d2c3b07522);
+            
+        
+
+        marker_3aeddcd2f03077f5c0b34a918950805f.bindPopup(popup_44deac8f4ffd4438166d959cd051837d)
+        ;
+
+        
+    
+    
+            var marker_17abf98034956e2bf1744001088cf240 = L.marker(
+                [37.716038818883085, -122.4402551358152],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_f405634f637f6d4dba7b2958f23a1cde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_17abf98034956e2bf1744001088cf240.setIcon(icon_f405634f637f6d4dba7b2958f23a1cde);
+        
+    
+        var popup_3ca86ddfda82415511ec466f7af9d2d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94468066a70812bc15feee5cac165238 = $(`<div id="html_94468066a70812bc15feee5cac165238" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_3ca86ddfda82415511ec466f7af9d2d5.setContent(html_94468066a70812bc15feee5cac165238);
+            
+        
+
+        marker_17abf98034956e2bf1744001088cf240.bindPopup(popup_3ca86ddfda82415511ec466f7af9d2d5)
+        ;
+
+        
+    
+    
+            var marker_45a5da91e395a28c8066c61e985973d7 = L.marker(
+                [37.762034000850846, -122.41607798747276],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_826b8d0d1682795c64bbec76406fac2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_45a5da91e395a28c8066c61e985973d7.setIcon(icon_826b8d0d1682795c64bbec76406fac2a);
+        
+    
+        var popup_a1804e849f11c0b44e93607a8829fed1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91c54ac9499a5b21a648ea0e75872746 = $(`<div id="html_91c54ac9499a5b21a648ea0e75872746" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_a1804e849f11c0b44e93607a8829fed1.setContent(html_91c54ac9499a5b21a648ea0e75872746);
+            
+        
+
+        marker_45a5da91e395a28c8066c61e985973d7.bindPopup(popup_a1804e849f11c0b44e93607a8829fed1)
+        ;
+
+        
+    
+    
+            var marker_25c31e483da4e45a32a34eb4bcd17a1b = L.marker(
+                [37.73314372948054, -122.4043448136048],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_b5f5185d7370539c647d998d88e60121 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_25c31e483da4e45a32a34eb4bcd17a1b.setIcon(icon_b5f5185d7370539c647d998d88e60121);
+        
+    
+        var popup_16e8b86c8f9e386e1e873003b8c27617 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c505f1bf2b727d57a193b5c735888cc0 = $(`<div id="html_c505f1bf2b727d57a193b5c735888cc0" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_16e8b86c8f9e386e1e873003b8c27617.setContent(html_c505f1bf2b727d57a193b5c735888cc0);
+            
+        
+
+        marker_25c31e483da4e45a32a34eb4bcd17a1b.bindPopup(popup_16e8b86c8f9e386e1e873003b8c27617)
+        ;
+
+        
+    
+    
+            var marker_86b5f89ed73de9b553bb21beabe2118d = L.marker(
+                [37.76043326044383, -122.41592874676807],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_af373f2d8a0618fe9596d4414c99e7da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_86b5f89ed73de9b553bb21beabe2118d.setIcon(icon_af373f2d8a0618fe9596d4414c99e7da);
+        
+    
+        var popup_2af6a93ed2fad35f56e9ed58cfffeacb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e8c92062c8290de5d49f54cfb561934 = $(`<div id="html_6e8c92062c8290de5d49f54cfb561934" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_2af6a93ed2fad35f56e9ed58cfffeacb.setContent(html_6e8c92062c8290de5d49f54cfb561934);
+            
+        
+
+        marker_86b5f89ed73de9b553bb21beabe2118d.bindPopup(popup_2af6a93ed2fad35f56e9ed58cfffeacb)
+        ;
+
+        
+    
+    
+            var marker_498462550162cc8bf9ab628f1aa34efc = L.marker(
+                [37.78564170879834, -122.41799627043912],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_d6703978779ac389c77594704659a009 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_498462550162cc8bf9ab628f1aa34efc.setIcon(icon_d6703978779ac389c77594704659a009);
+        
+    
+        var popup_7841002e3c53b802558420fd2b4da1d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ace9920b5fb3c65468f4961ff3ad5eac = $(`<div id="html_ace9920b5fb3c65468f4961ff3ad5eac" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_7841002e3c53b802558420fd2b4da1d1.setContent(html_ace9920b5fb3c65468f4961ff3ad5eac);
+            
+        
+
+        marker_498462550162cc8bf9ab628f1aa34efc.bindPopup(popup_7841002e3c53b802558420fd2b4da1d1)
+        ;
+
+        
+    
+    
+            var marker_917a97ad6638568c87fa7923c9dac765 = L.marker(
+                [37.78211660234325, -122.4500923034662],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_eae96f7648017f0056cc48eecb8d2491 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_917a97ad6638568c87fa7923c9dac765.setIcon(icon_eae96f7648017f0056cc48eecb8d2491);
+        
+    
+        var popup_513767c357a1ce8f76c779cb55c56b01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aed062aa93be0c0154b15ed94cf178db = $(`<div id="html_aed062aa93be0c0154b15ed94cf178db" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_513767c357a1ce8f76c779cb55c56b01.setContent(html_aed062aa93be0c0154b15ed94cf178db);
+            
+        
+
+        marker_917a97ad6638568c87fa7923c9dac765.bindPopup(popup_513767c357a1ce8f76c779cb55c56b01)
+        ;
+
+        
+    
+    
+            var marker_1c08cf299bbb3fd1bd21dc233d7edd56 = L.marker(
+                [37.76827365252839, -122.4199815132408],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_982b67a38e7656de7ec0815dac6e7836 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1c08cf299bbb3fd1bd21dc233d7edd56.setIcon(icon_982b67a38e7656de7ec0815dac6e7836);
+        
+    
+        var popup_865bd59de3cf17d47c03fde12263bf75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42cc4a0e424ba7261e0b479ceb27cb7a = $(`<div id="html_42cc4a0e424ba7261e0b479ceb27cb7a" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_865bd59de3cf17d47c03fde12263bf75.setContent(html_42cc4a0e424ba7261e0b479ceb27cb7a);
+            
+        
+
+        marker_1c08cf299bbb3fd1bd21dc233d7edd56.bindPopup(popup_865bd59de3cf17d47c03fde12263bf75)
+        ;
+
+        
+    
+    
+            var marker_c5619d6e151c970e5d16f92c71ee5a19 = L.marker(
+                [37.805494467998535, -122.4069566334036],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_3d3dd4de36e1bdc1fea71a6d4cd4feee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c5619d6e151c970e5d16f92c71ee5a19.setIcon(icon_3d3dd4de36e1bdc1fea71a6d4cd4feee);
+        
+    
+        var popup_e7d142fae1e1c03c531dd3f0cf5dad1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8169bea3d6b7ea7210fd6a9a0801c9e6 = $(`<div id="html_8169bea3d6b7ea7210fd6a9a0801c9e6" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_e7d142fae1e1c03c531dd3f0cf5dad1a.setContent(html_8169bea3d6b7ea7210fd6a9a0801c9e6);
+            
+        
+
+        marker_c5619d6e151c970e5d16f92c71ee5a19.bindPopup(popup_e7d142fae1e1c03c531dd3f0cf5dad1a)
+        ;
+
+        
+    
+    
+            var marker_09376d0990c750a5e31599e4c1e25745 = L.marker(
+                [37.78128638629654, -122.42218671176371],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_4ff63a22f5e359ed084d475340ac50a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_09376d0990c750a5e31599e4c1e25745.setIcon(icon_4ff63a22f5e359ed084d475340ac50a5);
+        
+    
+        var popup_331f73a5d8b6cbe7a6ae8ae81f7cdb20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3f755db92006bebc71117e9e8a8db20 = $(`<div id="html_b3f755db92006bebc71117e9e8a8db20" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_331f73a5d8b6cbe7a6ae8ae81f7cdb20.setContent(html_b3f755db92006bebc71117e9e8a8db20);
+            
+        
+
+        marker_09376d0990c750a5e31599e4c1e25745.bindPopup(popup_331f73a5d8b6cbe7a6ae8ae81f7cdb20)
+        ;
+
+        
+    
+    
+            var marker_38774a6b281b73c1d9f3a4f234a72f94 = L.marker(
+                [37.79377985665411, -122.40295736135474],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_ed9603f2f677bc491e01b548ef556522 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_38774a6b281b73c1d9f3a4f234a72f94.setIcon(icon_ed9603f2f677bc491e01b548ef556522);
+        
+    
+        var popup_d22313759706803b9023528623cb5685 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6fdb8ac76bcadc13402eff17f11f697 = $(`<div id="html_c6fdb8ac76bcadc13402eff17f11f697" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_d22313759706803b9023528623cb5685.setContent(html_c6fdb8ac76bcadc13402eff17f11f697);
+            
+        
+
+        marker_38774a6b281b73c1d9f3a4f234a72f94.bindPopup(popup_d22313759706803b9023528623cb5685)
+        ;
+
+        
+    
+    
+            var marker_73614c3034cb555407db65d65f2d74dc = L.marker(
+                [37.80328399631487, -122.44691011930168],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_6edac6c86c397358eff364d89873bcd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_73614c3034cb555407db65d65f2d74dc.setIcon(icon_6edac6c86c397358eff364d89873bcd6);
+        
+    
+        var popup_4c8b7f60c6b2a6a8529d9d91809592e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48cd5db68b6a2d53e1f78f8234821443 = $(`<div id="html_48cd5db68b6a2d53e1f78f8234821443" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_4c8b7f60c6b2a6a8529d9d91809592e3.setContent(html_48cd5db68b6a2d53e1f78f8234821443);
+            
+        
+
+        marker_73614c3034cb555407db65d65f2d74dc.bindPopup(popup_4c8b7f60c6b2a6a8529d9d91809592e3)
+        ;
+
+        
+    
+    
+            var marker_3e29e045de79b81959c2ff967ac9b6bd = L.marker(
+                [37.79458821565897, -122.3965859141178],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_5f1bd41e4dc2b5422e5b032d6a6715b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3e29e045de79b81959c2ff967ac9b6bd.setIcon(icon_5f1bd41e4dc2b5422e5b032d6a6715b2);
+        
+    
+        var popup_41b967ddd35b70d7d262a616cb8d2840 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e802377bfb115f4b76eacab3268081d = $(`<div id="html_6e802377bfb115f4b76eacab3268081d" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_41b967ddd35b70d7d262a616cb8d2840.setContent(html_6e802377bfb115f4b76eacab3268081d);
+            
+        
+
+        marker_3e29e045de79b81959c2ff967ac9b6bd.bindPopup(popup_41b967ddd35b70d7d262a616cb8d2840)
+        ;
+
+        
+    
+    
+            var marker_0a4c663758c5f500d2c465b5d17f5dd2 = L.marker(
+                [37.73479735810732, -122.3906937736637],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_31eb742a43661a56643241e7b8ccea04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0a4c663758c5f500d2c465b5d17f5dd2.setIcon(icon_31eb742a43661a56643241e7b8ccea04);
+        
+    
+        var popup_7aa6c1b76bdd136ea256dc1d36017948 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8dc142fa9da244acab9e6de76f7bea6c = $(`<div id="html_8dc142fa9da244acab9e6de76f7bea6c" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_7aa6c1b76bdd136ea256dc1d36017948.setContent(html_8dc142fa9da244acab9e6de76f7bea6c);
+            
+        
+
+        marker_0a4c663758c5f500d2c465b5d17f5dd2.bindPopup(popup_7aa6c1b76bdd136ea256dc1d36017948)
+        ;
+
+        
+    
+    
+            var marker_688fc9f2b349b8d277914ec051b27d16 = L.marker(
+                [37.7838822346484, -122.48501094500502],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_2c6dbedc12289caffa8421c8c9e5356e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_688fc9f2b349b8d277914ec051b27d16.setIcon(icon_2c6dbedc12289caffa8421c8c9e5356e);
+        
+    
+        var popup_b4c3e46d4988a64b4f7a488db846b519 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_228eb05457f2dd535e2d5d529fc3cff2 = $(`<div id="html_228eb05457f2dd535e2d5d529fc3cff2" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_b4c3e46d4988a64b4f7a488db846b519.setContent(html_228eb05457f2dd535e2d5d529fc3cff2);
+            
+        
+
+        marker_688fc9f2b349b8d277914ec051b27d16.bindPopup(popup_b4c3e46d4988a64b4f7a488db846b519)
+        ;
+
+        
+    
+    
+            var marker_88d3c879f001ff15b758b024a23d2f22 = L.marker(
+                [37.78202426616839, -122.40115971954746],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_70325808a4fea68e974a0efa1eef6779 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_88d3c879f001ff15b758b024a23d2f22.setIcon(icon_70325808a4fea68e974a0efa1eef6779);
+        
+    
+        var popup_1b9b45d0efc50fe0a3657727b4daac4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d566a1a1305cc037263028ced42b1dd = $(`<div id="html_6d566a1a1305cc037263028ced42b1dd" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_1b9b45d0efc50fe0a3657727b4daac4a.setContent(html_6d566a1a1305cc037263028ced42b1dd);
+            
+        
+
+        marker_88d3c879f001ff15b758b024a23d2f22.bindPopup(popup_1b9b45d0efc50fe0a3657727b4daac4a)
+        ;
+
+        
+    
+    
+            var marker_d967deae8331820e8b3edf0c0ec37ce7 = L.marker(
+                [37.71930935913096, -122.43886348695386],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_01fa9eb56250c5f25462bca5b567bbf4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d967deae8331820e8b3edf0c0ec37ce7.setIcon(icon_01fa9eb56250c5f25462bca5b567bbf4);
+        
+    
+        var popup_e27286c1d405b6cd51ef6befead74086 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e56e27b15cc49bc772cb1dabd7d8d76 = $(`<div id="html_3e56e27b15cc49bc772cb1dabd7d8d76" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_e27286c1d405b6cd51ef6befead74086.setContent(html_3e56e27b15cc49bc772cb1dabd7d8d76);
+            
+        
+
+        marker_d967deae8331820e8b3edf0c0ec37ce7.bindPopup(popup_e27286c1d405b6cd51ef6befead74086)
+        ;
+
+        
+    
+    
+            var marker_3ba1d37846dcf2f589cd0d45eaeb28ff = L.marker(
+                [37.78569712800595, -122.48622379609373],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_7f38b80457b2800f22559b366effbd3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3ba1d37846dcf2f589cd0d45eaeb28ff.setIcon(icon_7f38b80457b2800f22559b366effbd3c);
+        
+    
+        var popup_92e46951f76bb36a73556bb7a6c28f42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51f07fd9994659186972c8ec06e1c3ec = $(`<div id="html_51f07fd9994659186972c8ec06e1c3ec" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_92e46951f76bb36a73556bb7a6c28f42.setContent(html_51f07fd9994659186972c8ec06e1c3ec);
+            
+        
+
+        marker_3ba1d37846dcf2f589cd0d45eaeb28ff.bindPopup(popup_92e46951f76bb36a73556bb7a6c28f42)
+        ;
+
+        
+    
+    
+            var marker_d5ea46a4135441aea7478605ce40def3 = L.marker(
+                [37.80569594262971, -122.40535724201465],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_0d4b459befc04e8d6ad327dfc56173b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d5ea46a4135441aea7478605ce40def3.setIcon(icon_0d4b459befc04e8d6ad327dfc56173b7);
+        
+    
+        var popup_545ab87efce3cab3bf8981a3c7eaefee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ef3c09797d5035305f580968851abba = $(`<div id="html_7ef3c09797d5035305f580968851abba" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_545ab87efce3cab3bf8981a3c7eaefee.setContent(html_7ef3c09797d5035305f580968851abba);
+            
+        
+
+        marker_d5ea46a4135441aea7478605ce40def3.bindPopup(popup_545ab87efce3cab3bf8981a3c7eaefee)
+        ;
+
+        
+    
+    
+            var marker_0602732e5b9fae9e47682fda4e96476b = L.marker(
+                [37.730658351461614, -122.40340046316182],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_70e5aa64989d1195360205c84e52fc41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0602732e5b9fae9e47682fda4e96476b.setIcon(icon_70e5aa64989d1195360205c84e52fc41);
+        
+    
+        var popup_ee9789e8341beadb8fc2ce6cb53193c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f546e0ace7a32ea7a78a4a55c1e38938 = $(`<div id="html_f546e0ace7a32ea7a78a4a55c1e38938" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_ee9789e8341beadb8fc2ce6cb53193c2.setContent(html_f546e0ace7a32ea7a78a4a55c1e38938);
+            
+        
+
+        marker_0602732e5b9fae9e47682fda4e96476b.bindPopup(popup_ee9789e8341beadb8fc2ce6cb53193c2)
+        ;
+
+        
+    
+    
+            var marker_8f287b2d994a325e1105f85bb30f38d8 = L.marker(
+                [37.79004514038039, -122.41720480101912],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_6e9de5999967e635edff8e88160dfc44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8f287b2d994a325e1105f85bb30f38d8.setIcon(icon_6e9de5999967e635edff8e88160dfc44);
+        
+    
+        var popup_c4cfd5f80df8dd85249df5f38d879a2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b42bb3b4c334e749dd27f8d10bb490f = $(`<div id="html_9b42bb3b4c334e749dd27f8d10bb490f" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_c4cfd5f80df8dd85249df5f38d879a2c.setContent(html_9b42bb3b4c334e749dd27f8d10bb490f);
+            
+        
+
+        marker_8f287b2d994a325e1105f85bb30f38d8.bindPopup(popup_c4cfd5f80df8dd85249df5f38d879a2c)
+        ;
+
+        
+    
+    
+            var marker_dac2dda13616538929f9fdff294618fc = L.marker(
+                [37.782488031626265, -122.4458205129012],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_380eb127b72a486b3e23afc11153b885 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dac2dda13616538929f9fdff294618fc.setIcon(icon_380eb127b72a486b3e23afc11153b885);
+        
+    
+        var popup_3d4cc52e41e1b67aa7686e6531537dd5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b7e0af83bcfeb8313677d1c1f1e6985 = $(`<div id="html_0b7e0af83bcfeb8313677d1c1f1e6985" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_3d4cc52e41e1b67aa7686e6531537dd5.setContent(html_0b7e0af83bcfeb8313677d1c1f1e6985);
+            
+        
+
+        marker_dac2dda13616538929f9fdff294618fc.bindPopup(popup_3d4cc52e41e1b67aa7686e6531537dd5)
+        ;
+
+        
+    
+    
+            var marker_c8cb54311e696ccbab5dd0f159bf041f = L.marker(
+                [37.78223057378371, -122.4102920278806],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_0413d1fe8aa09a02d18d05afc3c30270 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c8cb54311e696ccbab5dd0f159bf041f.setIcon(icon_0413d1fe8aa09a02d18d05afc3c30270);
+        
+    
+        var popup_7d273fc27e7cdae3b7158ab9d46786da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62a0c0b96dde29841e3d276695f84c14 = $(`<div id="html_62a0c0b96dde29841e3d276695f84c14" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_7d273fc27e7cdae3b7158ab9d46786da.setContent(html_62a0c0b96dde29841e3d276695f84c14);
+            
+        
+
+        marker_c8cb54311e696ccbab5dd0f159bf041f.bindPopup(popup_7d273fc27e7cdae3b7158ab9d46786da)
+        ;
+
+        
+    
+    
+            var marker_4fe2d967534ea57c84ba9012eabad1d1 = L.marker(
+                [37.805618478961165, -122.41360416993442],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_55081bca567183e48473342852426db2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4fe2d967534ea57c84ba9012eabad1d1.setIcon(icon_55081bca567183e48473342852426db2);
+        
+    
+        var popup_6859ae6cec40667aebd7455f68aa7341 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22eddc383b67023aa3f5635bfc34dafd = $(`<div id="html_22eddc383b67023aa3f5635bfc34dafd" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_6859ae6cec40667aebd7455f68aa7341.setContent(html_22eddc383b67023aa3f5635bfc34dafd);
+            
+        
+
+        marker_4fe2d967534ea57c84ba9012eabad1d1.bindPopup(popup_6859ae6cec40667aebd7455f68aa7341)
+        ;
+
+        
+    
+    
+            var marker_d170436a210a4b2357eff31e0da91941 = L.marker(
+                [37.78952931651484, -122.41372838950014],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_d71c72e27c0a33154d442bc68debf871 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d170436a210a4b2357eff31e0da91941.setIcon(icon_d71c72e27c0a33154d442bc68debf871);
+        
+    
+        var popup_01f77e80ada961d4d04e33b1c6696ad3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f504c76b76b8f844ea2649938c34f17 = $(`<div id="html_7f504c76b76b8f844ea2649938c34f17" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_01f77e80ada961d4d04e33b1c6696ad3.setContent(html_7f504c76b76b8f844ea2649938c34f17);
+            
+        
+
+        marker_d170436a210a4b2357eff31e0da91941.bindPopup(popup_01f77e80ada961d4d04e33b1c6696ad3)
+        ;
+
+        
+    
+    
+            var marker_09b7eae03156a1c7c0cc697f60bb82f2 = L.marker(
+                [37.79057825823802, -122.42068738428432],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_90b7002dea3c6b8aa7b2dce0263b2a70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_09b7eae03156a1c7c0cc697f60bb82f2.setIcon(icon_90b7002dea3c6b8aa7b2dce0263b2a70);
+        
+    
+        var popup_d4ad71e413193f8cca1a387b6606a3d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_603a272b6b58945928ad10d7361c14d8 = $(`<div id="html_603a272b6b58945928ad10d7361c14d8" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_d4ad71e413193f8cca1a387b6606a3d7.setContent(html_603a272b6b58945928ad10d7361c14d8);
+            
+        
+
+        marker_09b7eae03156a1c7c0cc697f60bb82f2.bindPopup(popup_d4ad71e413193f8cca1a387b6606a3d7)
+        ;
+
+        
+    
+    
+            var marker_cd6ca5071c30ec3c036dc0361efd3357 = L.marker(
+                [37.71992742512608, -122.38945904536318],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_be5779bd843f599887bd48ad4cebaba1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cd6ca5071c30ec3c036dc0361efd3357.setIcon(icon_be5779bd843f599887bd48ad4cebaba1);
+        
+    
+        var popup_3cd56dc45a82b9c261309fa33f9221c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04424cbf88cd83f462fdc6f63702eb4b = $(`<div id="html_04424cbf88cd83f462fdc6f63702eb4b" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_3cd56dc45a82b9c261309fa33f9221c4.setContent(html_04424cbf88cd83f462fdc6f63702eb4b);
+            
+        
+
+        marker_cd6ca5071c30ec3c036dc0361efd3357.bindPopup(popup_3cd56dc45a82b9c261309fa33f9221c4)
+        ;
+
+        
+    
+    
+            var marker_b80486081af9c776515d8ea5686dddad = L.marker(
+                [37.76325388611961, -122.40630557193332],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_78b590a4b8850ea034bb6aac01963d70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b80486081af9c776515d8ea5686dddad.setIcon(icon_78b590a4b8850ea034bb6aac01963d70);
+        
+    
+        var popup_e2b159dae9f8d6be9a21125d05c72854 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0802c7b9a15d358b22d054e99877854e = $(`<div id="html_0802c7b9a15d358b22d054e99877854e" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_e2b159dae9f8d6be9a21125d05c72854.setContent(html_0802c7b9a15d358b22d054e99877854e);
+            
+        
+
+        marker_b80486081af9c776515d8ea5686dddad.bindPopup(popup_e2b159dae9f8d6be9a21125d05c72854)
+        ;
+
+        
+    
+    
+            var marker_31e99043932f910ffe398523d08164d4 = L.marker(
+                [37.763187800944834, -122.40730484858472],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_848d32c1fe6244b58a662b9cb0af0c8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_31e99043932f910ffe398523d08164d4.setIcon(icon_848d32c1fe6244b58a662b9cb0af0c8b);
+        
+    
+        var popup_3b02d4cadbfbadbbd5754aa3efa37fbb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8df19240c8ea84885e697fff1021a358 = $(`<div id="html_8df19240c8ea84885e697fff1021a358" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_3b02d4cadbfbadbbd5754aa3efa37fbb.setContent(html_8df19240c8ea84885e697fff1021a358);
+            
+        
+
+        marker_31e99043932f910ffe398523d08164d4.bindPopup(popup_3b02d4cadbfbadbbd5754aa3efa37fbb)
+        ;
+
+        
+    
+    
+            var marker_55d4c091c9dab327adff23c9fb42cd40 = L.marker(
+                [37.76350345863749, -122.40244334536943],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_53924e56948163151e7a64418be27bce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_55d4c091c9dab327adff23c9fb42cd40.setIcon(icon_53924e56948163151e7a64418be27bce);
+        
+    
+        var popup_5a99a880800e6e1a3c8703c4eecc7423 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb7e605a1e21a1d9baea58356cf3dcc7 = $(`<div id="html_fb7e605a1e21a1d9baea58356cf3dcc7" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_5a99a880800e6e1a3c8703c4eecc7423.setContent(html_fb7e605a1e21a1d9baea58356cf3dcc7);
+            
+        
+
+        marker_55d4c091c9dab327adff23c9fb42cd40.bindPopup(popup_5a99a880800e6e1a3c8703c4eecc7423)
+        ;
+
+        
+    
+    
+            var marker_33677508c3004552147df8aed221ed74 = L.marker(
+                [37.76877049785351, -122.427462058806],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_700dffc5756f3ed1c83528f20fe8c9bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_33677508c3004552147df8aed221ed74.setIcon(icon_700dffc5756f3ed1c83528f20fe8c9bf);
+        
+    
+        var popup_672315a811a09b21334e164779e6bbd1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80e5382fca51c96139c85364da888334 = $(`<div id="html_80e5382fca51c96139c85364da888334" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_672315a811a09b21334e164779e6bbd1.setContent(html_80e5382fca51c96139c85364da888334);
+            
+        
+
+        marker_33677508c3004552147df8aed221ed74.bindPopup(popup_672315a811a09b21334e164779e6bbd1)
+        ;
+
+        
+    
+    
+            var marker_a65fdf065e589de7da92d512c2ffa6ff = L.marker(
+                [37.78328785199654, -122.40895216005931],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_c2903bd6adb4f218c828054af6082512 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a65fdf065e589de7da92d512c2ffa6ff.setIcon(icon_c2903bd6adb4f218c828054af6082512);
+        
+    
+        var popup_8cbd7cb97604d049de433e7db7327427 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f789360ab679f5c9e19da6b5ac14a455 = $(`<div id="html_f789360ab679f5c9e19da6b5ac14a455" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_8cbd7cb97604d049de433e7db7327427.setContent(html_f789360ab679f5c9e19da6b5ac14a455);
+            
+        
+
+        marker_a65fdf065e589de7da92d512c2ffa6ff.bindPopup(popup_8cbd7cb97604d049de433e7db7327427)
+        ;
+
+        
+    
+    
+            var marker_b3835e27ffca04c3809fb4b9d9137043 = L.marker(
+                [37.78803330548382, -122.40668317269146],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_efc7d6d0add491eb2a2dffa6e6557ec1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b3835e27ffca04c3809fb4b9d9137043.setIcon(icon_efc7d6d0add491eb2a2dffa6e6557ec1);
+        
+    
+        var popup_e9876c5b6ae7dcff28657ba708c6c6f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_779fb022448f06125ec9134460ccc399 = $(`<div id="html_779fb022448f06125ec9134460ccc399" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_e9876c5b6ae7dcff28657ba708c6c6f9.setContent(html_779fb022448f06125ec9134460ccc399);
+            
+        
+
+        marker_b3835e27ffca04c3809fb4b9d9137043.bindPopup(popup_e9876c5b6ae7dcff28657ba708c6c6f9)
+        ;
+
+        
+    
+    
+            var marker_40a47d4df1ebde7ef826768cbae1f546 = L.marker(
+                [37.7805353858225, -122.40816079455212],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_a3d388f410698abd4530d5793c9f99d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_40a47d4df1ebde7ef826768cbae1f546.setIcon(icon_a3d388f410698abd4530d5793c9f99d7);
+        
+    
+        var popup_343eac1e537d5d6e647fb66816712eac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e86257c2ca9d63322494eb45aa07f6fd = $(`<div id="html_e86257c2ca9d63322494eb45aa07f6fd" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_343eac1e537d5d6e647fb66816712eac.setContent(html_e86257c2ca9d63322494eb45aa07f6fd);
+            
+        
+
+        marker_40a47d4df1ebde7ef826768cbae1f546.bindPopup(popup_343eac1e537d5d6e647fb66816712eac)
+        ;
+
+        
+    
+    
+            var marker_30e825922b569a58d50dbf20cdead246 = L.marker(
+                [37.77376934545676, -122.41161011784295],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_5d7290898e629ef6ece00c78936a482b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_30e825922b569a58d50dbf20cdead246.setIcon(icon_5d7290898e629ef6ece00c78936a482b);
+        
+    
+        var popup_659f668022e745d9cfab58a0183c85d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_662420990605e84c85a78e78119912ee = $(`<div id="html_662420990605e84c85a78e78119912ee" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_659f668022e745d9cfab58a0183c85d0.setContent(html_662420990605e84c85a78e78119912ee);
+            
+        
+
+        marker_30e825922b569a58d50dbf20cdead246.bindPopup(popup_659f668022e745d9cfab58a0183c85d0)
+        ;
+
+        
+    
+    
+            var marker_f4d99500ab0e648e0b2c98ed1aa910ec = L.marker(
+                [37.78574398866823, -122.4058310124795],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_e32dfb6545f25fc72ba85ff0be4eb7f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f4d99500ab0e648e0b2c98ed1aa910ec.setIcon(icon_e32dfb6545f25fc72ba85ff0be4eb7f8);
+        
+    
+        var popup_141bef809c14b728ae8c9dbbc2fa0e89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d37a3d624822e05523685d0219ac8a1 = $(`<div id="html_7d37a3d624822e05523685d0219ac8a1" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_141bef809c14b728ae8c9dbbc2fa0e89.setContent(html_7d37a3d624822e05523685d0219ac8a1);
+            
+        
+
+        marker_f4d99500ab0e648e0b2c98ed1aa910ec.bindPopup(popup_141bef809c14b728ae8c9dbbc2fa0e89)
+        ;
+
+        
+    
+    
+            var marker_d65089e4a1ecde162adbb4875258797d = L.marker(
+                [37.77050095978848, -122.43181093489922],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_affe487c6dffdd191eeff74ba746104e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d65089e4a1ecde162adbb4875258797d.setIcon(icon_affe487c6dffdd191eeff74ba746104e);
+        
+    
+        var popup_ac7e842cd490617d77c268217be788b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_723cf6d18d7397b4993c9733ef1a0cc9 = $(`<div id="html_723cf6d18d7397b4993c9733ef1a0cc9" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_ac7e842cd490617d77c268217be788b9.setContent(html_723cf6d18d7397b4993c9733ef1a0cc9);
+            
+        
+
+        marker_d65089e4a1ecde162adbb4875258797d.bindPopup(popup_ac7e842cd490617d77c268217be788b9)
+        ;
+
+        
+    
+    
+            var marker_c6a73fc0397eceffa3a1fb0b2162b2f7 = L.marker(
+                [37.74176048779341, -122.42236646065211],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_142be56353bcb1a35424777a1b4461e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c6a73fc0397eceffa3a1fb0b2162b2f7.setIcon(icon_142be56353bcb1a35424777a1b4461e9);
+        
+    
+        var popup_8ba33331207d501aca034e65ba37df26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_933eb6fc01843ff1785554c051741691 = $(`<div id="html_933eb6fc01843ff1785554c051741691" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_8ba33331207d501aca034e65ba37df26.setContent(html_933eb6fc01843ff1785554c051741691);
+            
+        
+
+        marker_c6a73fc0397eceffa3a1fb0b2162b2f7.bindPopup(popup_8ba33331207d501aca034e65ba37df26)
+        ;
+
+        
+    
+    
+            var marker_a7a23e307a4cc2c00011daade6033cfa = L.marker(
+                [37.78300407764348, -122.4124117474483],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_56bf3924f2941d696c114e9fcc9cc275 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a7a23e307a4cc2c00011daade6033cfa.setIcon(icon_56bf3924f2941d696c114e9fcc9cc275);
+        
+    
+        var popup_224f4537e12c57db9b76aec21fa9cdac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf81e673a52473b77a1b0f0e3c0bc41d = $(`<div id="html_bf81e673a52473b77a1b0f0e3c0bc41d" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_224f4537e12c57db9b76aec21fa9cdac.setContent(html_bf81e673a52473b77a1b0f0e3c0bc41d);
+            
+        
+
+        marker_a7a23e307a4cc2c00011daade6033cfa.bindPopup(popup_224f4537e12c57db9b76aec21fa9cdac)
+        ;
+
+        
+    
+    
+            var marker_fcd80152e0d1d8e6e82a2e867c36a728 = L.marker(
+                [37.76877049785351, -122.427462058806],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_a2a0b2f2a7c6f4fd447a5dc5d5f1dd9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fcd80152e0d1d8e6e82a2e867c36a728.setIcon(icon_a2a0b2f2a7c6f4fd447a5dc5d5f1dd9b);
+        
+    
+        var popup_9680bc6f854aa7a54f40b542d8fc9c26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7b0d26827f681b0a530776db07aa612 = $(`<div id="html_d7b0d26827f681b0a530776db07aa612" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_9680bc6f854aa7a54f40b542d8fc9c26.setContent(html_d7b0d26827f681b0a530776db07aa612);
+            
+        
+
+        marker_fcd80152e0d1d8e6e82a2e867c36a728.bindPopup(popup_9680bc6f854aa7a54f40b542d8fc9c26)
+        ;
+
+        
+    
+    
+            var marker_26ef595e3432a7754c10bebd017f0b65 = L.marker(
+                [37.77956414797087, -122.43195180329982],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_ec4f1c10846c26bbfdd6f0e366d7f9ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_26ef595e3432a7754c10bebd017f0b65.setIcon(icon_ec4f1c10846c26bbfdd6f0e366d7f9ef);
+        
+    
+        var popup_51bcaf982a6ba53a7a4f7ee8060f233f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95ed0be2f2ade20a60f053ae82247376 = $(`<div id="html_95ed0be2f2ade20a60f053ae82247376" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_51bcaf982a6ba53a7a4f7ee8060f233f.setContent(html_95ed0be2f2ade20a60f053ae82247376);
+            
+        
+
+        marker_26ef595e3432a7754c10bebd017f0b65.bindPopup(popup_51bcaf982a6ba53a7a4f7ee8060f233f)
+        ;
+
+        
+    
+    
+            var marker_7ff8b00fe14c996d0ce9a4d17882b099 = L.marker(
+                [37.74312266332609, -122.42148545138262],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_00e43460993e277067b6f349aef84ff1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7ff8b00fe14c996d0ce9a4d17882b099.setIcon(icon_00e43460993e277067b6f349aef84ff1);
+        
+    
+        var popup_a4de5f5a09bcd813f08b0f82ed3a569b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_148907aac2dbeac3edd8445be4fc95d8 = $(`<div id="html_148907aac2dbeac3edd8445be4fc95d8" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_a4de5f5a09bcd813f08b0f82ed3a569b.setContent(html_148907aac2dbeac3edd8445be4fc95d8);
+            
+        
+
+        marker_7ff8b00fe14c996d0ce9a4d17882b099.bindPopup(popup_a4de5f5a09bcd813f08b0f82ed3a569b)
+        ;
+
+        
+    
+    
+            var marker_303f873d9267384d1a191413e14b4b3e = L.marker(
+                [37.79377985665411, -122.40295736135474],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_f27e4b2d50ff920df4d0da72c83e92f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_303f873d9267384d1a191413e14b4b3e.setIcon(icon_f27e4b2d50ff920df4d0da72c83e92f3);
+        
+    
+        var popup_c4bdfa15a70c23e5def11540781d1c87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c8f47545fb1392734c61fcbdb6abd49 = $(`<div id="html_7c8f47545fb1392734c61fcbdb6abd49" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_c4bdfa15a70c23e5def11540781d1c87.setContent(html_7c8f47545fb1392734c61fcbdb6abd49);
+            
+        
+
+        marker_303f873d9267384d1a191413e14b4b3e.bindPopup(popup_c4bdfa15a70c23e5def11540781d1c87)
+        ;
+
+        
+    
+    
+            var marker_83bd7ace65b7e18df40583a6ae3e9261 = L.marker(
+                [37.72643345478486, -122.4031023085726],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_1dcdd8638b42cd7e62753532403d6228 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_83bd7ace65b7e18df40583a6ae3e9261.setIcon(icon_1dcdd8638b42cd7e62753532403d6228);
+        
+    
+        var popup_816c7b06fbeee3ba8a075082bcf615fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e2d4834afc544cbf94b210006180d3d = $(`<div id="html_6e2d4834afc544cbf94b210006180d3d" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_816c7b06fbeee3ba8a075082bcf615fe.setContent(html_6e2d4834afc544cbf94b210006180d3d);
+            
+        
+
+        marker_83bd7ace65b7e18df40583a6ae3e9261.bindPopup(popup_816c7b06fbeee3ba8a075082bcf615fe)
+        ;
+
+        
+    
+    
+            var marker_a631b5ab00a4a01146e9b2a1cba6b5a9 = L.marker(
+                [37.74312266332609, -122.42148545138262],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_c7d7cb05756656fa6eea29b5d7190da2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a631b5ab00a4a01146e9b2a1cba6b5a9.setIcon(icon_c7d7cb05756656fa6eea29b5d7190da2);
+        
+    
+        var popup_6aafb80662a1866d789d9630df4940ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c227069b9eaa2eefc8f0a405bb3081b = $(`<div id="html_0c227069b9eaa2eefc8f0a405bb3081b" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_6aafb80662a1866d789d9630df4940ad.setContent(html_0c227069b9eaa2eefc8f0a405bb3081b);
+            
+        
+
+        marker_a631b5ab00a4a01146e9b2a1cba6b5a9.bindPopup(popup_6aafb80662a1866d789d9630df4940ad)
+        ;
+
+        
+    
+    
+            var marker_ad61bab441ecfbfc7aee36ad6e1e87da = L.marker(
+                [37.76183585447031, -122.41935926843615],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_f937ad4a7f463c43862d60367cd7cabb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ad61bab441ecfbfc7aee36ad6e1e87da.setIcon(icon_f937ad4a7f463c43862d60367cd7cabb);
+        
+    
+        var popup_c4508ecf9af9cdac601e8f048f6e6e35 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98e77f1882bdbb14960da9ab7c1b488c = $(`<div id="html_98e77f1882bdbb14960da9ab7c1b488c" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_c4508ecf9af9cdac601e8f048f6e6e35.setContent(html_98e77f1882bdbb14960da9ab7c1b488c);
+            
+        
+
+        marker_ad61bab441ecfbfc7aee36ad6e1e87da.bindPopup(popup_c4508ecf9af9cdac601e8f048f6e6e35)
+        ;
+
+        
+    
+    
+            var marker_7c94d6e7c968c3ff037470268f1077c0 = L.marker(
+                [37.78693970570657, -122.41151576847024],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_8b9163284641b6c3624077d6aa3756c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7c94d6e7c968c3ff037470268f1077c0.setIcon(icon_8b9163284641b6c3624077d6aa3756c2);
+        
+    
+        var popup_966fc05ba0299e3a7553554451f1e85a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12d9bd1529c307153244b6e540df2132 = $(`<div id="html_12d9bd1529c307153244b6e540df2132" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_966fc05ba0299e3a7553554451f1e85a.setContent(html_12d9bd1529c307153244b6e540df2132);
+            
+        
+
+        marker_7c94d6e7c968c3ff037470268f1077c0.bindPopup(popup_966fc05ba0299e3a7553554451f1e85a)
+        ;
+
+        
+    
+    
+            var marker_876ba2aac56c588754ccbb09cd51199d = L.marker(
+                [37.73968664480658, -122.46523744291984],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_8ad626e44a098b680a5ddaaec649fae4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_876ba2aac56c588754ccbb09cd51199d.setIcon(icon_8ad626e44a098b680a5ddaaec649fae4);
+        
+    
+        var popup_33026a2f69558fe03f11672c16bd7401 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48807a10204ebf2ba5e3e11ae68e8bdd = $(`<div id="html_48807a10204ebf2ba5e3e11ae68e8bdd" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_33026a2f69558fe03f11672c16bd7401.setContent(html_48807a10204ebf2ba5e3e11ae68e8bdd);
+            
+        
+
+        marker_876ba2aac56c588754ccbb09cd51199d.bindPopup(popup_33026a2f69558fe03f11672c16bd7401)
+        ;
+
+        
+    
+    
+            var marker_bd288b5ee8cbee82ed190907cc0adfab = L.marker(
+                [37.77745741894575, -122.4131576926893],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_6e8b7c65f4477f91b82bd78662c6b742 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bd288b5ee8cbee82ed190907cc0adfab.setIcon(icon_6e8b7c65f4477f91b82bd78662c6b742);
+        
+    
+        var popup_8db3c1c94be0d6ad53f75ff4321fa981 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92d546d6c9132d0906afeadbcaf25b49 = $(`<div id="html_92d546d6c9132d0906afeadbcaf25b49" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_8db3c1c94be0d6ad53f75ff4321fa981.setContent(html_92d546d6c9132d0906afeadbcaf25b49);
+            
+        
+
+        marker_bd288b5ee8cbee82ed190907cc0adfab.bindPopup(popup_8db3c1c94be0d6ad53f75ff4321fa981)
+        ;
+
+        
+    
+    
+            var marker_fb6feb7acafe5354e6c835ab85a968c3 = L.marker(
+                [37.77507596005672, -122.51129492624534],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_45ccd2f99eafda6c749dd2753b3e51e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fb6feb7acafe5354e6c835ab85a968c3.setIcon(icon_45ccd2f99eafda6c749dd2753b3e51e4);
+        
+    
+        var popup_7d1a86ff48a648d07e6b3f6c9ee8d2fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04ae7d1472b60967bf53bad7a9a15b77 = $(`<div id="html_04ae7d1472b60967bf53bad7a9a15b77" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_7d1a86ff48a648d07e6b3f6c9ee8d2fa.setContent(html_04ae7d1472b60967bf53bad7a9a15b77);
+            
+        
+
+        marker_fb6feb7acafe5354e6c835ab85a968c3.bindPopup(popup_7d1a86ff48a648d07e6b3f6c9ee8d2fa)
+        ;
+
+        
+    
+    
+            var marker_232ac17afcbfcdbe4c074a6a46e03e39 = L.marker(
+                [37.72694991292525, -122.47603947349434],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_f9e7750323df306db5e6371d835e0418 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_232ac17afcbfcdbe4c074a6a46e03e39.setIcon(icon_f9e7750323df306db5e6371d835e0418);
+        
+    
+        var popup_86bbfb25f08cc9afec2a033f1c02cd85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30f8d6eec33f9d8887090b9d33805509 = $(`<div id="html_30f8d6eec33f9d8887090b9d33805509" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_86bbfb25f08cc9afec2a033f1c02cd85.setContent(html_30f8d6eec33f9d8887090b9d33805509);
+            
+        
+
+        marker_232ac17afcbfcdbe4c074a6a46e03e39.bindPopup(popup_86bbfb25f08cc9afec2a033f1c02cd85)
+        ;
+
+        
+    
+    
+            var marker_63f52064762b8d9900f83ec84d65d8d8 = L.marker(
+                [37.76505133632968, -122.41966897380142],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_4429029acc1388334d5dba126621ec65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_63f52064762b8d9900f83ec84d65d8d8.setIcon(icon_4429029acc1388334d5dba126621ec65);
+        
+    
+        var popup_5716a25c0f5bc40427cf7c65f29784aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_feda7e4e04059ee078e145dfde242880 = $(`<div id="html_feda7e4e04059ee078e145dfde242880" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_5716a25c0f5bc40427cf7c65f29784aa.setContent(html_feda7e4e04059ee078e145dfde242880);
+            
+        
+
+        marker_63f52064762b8d9900f83ec84d65d8d8.bindPopup(popup_5716a25c0f5bc40427cf7c65f29784aa)
+        ;
+
+        
+    
+    
+            var marker_d40d19fe25ad0074a1228b2b55855a1f = L.marker(
+                [37.76773488710466, -122.4286571643094],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_a0a61e233d4fec1976a5cf53e40f976e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d40d19fe25ad0074a1228b2b55855a1f.setIcon(icon_a0a61e233d4fec1976a5cf53e40f976e);
+        
+    
+        var popup_ffca883964e0bcb48be4505f07ac0aeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad5d5460f1cad1dcf6741576efb3b085 = $(`<div id="html_ad5d5460f1cad1dcf6741576efb3b085" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_ffca883964e0bcb48be4505f07ac0aeb.setContent(html_ad5d5460f1cad1dcf6741576efb3b085);
+            
+        
+
+        marker_d40d19fe25ad0074a1228b2b55855a1f.bindPopup(popup_ffca883964e0bcb48be4505f07ac0aeb)
+        ;
+
+        
+    
+    
+            var marker_e09974a98c0b74fdc98411cfe561ec35 = L.marker(
+                [37.77135811190232, -122.44383614984872],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_af38bed3818673788bdb95b5ad800671 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e09974a98c0b74fdc98411cfe561ec35.setIcon(icon_af38bed3818673788bdb95b5ad800671);
+        
+    
+        var popup_648a09c3c67070b365b1d3ff9bc463cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b4462a2c49cec2dd219d1ad6f7b4677 = $(`<div id="html_2b4462a2c49cec2dd219d1ad6f7b4677" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_648a09c3c67070b365b1d3ff9bc463cd.setContent(html_2b4462a2c49cec2dd219d1ad6f7b4677);
+            
+        
+
+        marker_e09974a98c0b74fdc98411cfe561ec35.bindPopup(popup_648a09c3c67070b365b1d3ff9bc463cd)
+        ;
+
+        
+    
+    
+            var marker_e9b194c3a95a856478d2f4989175ca10 = L.marker(
+                [37.78328785199654, -122.40895216005931],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_dbc24d3fe9e0bc22c82aafd24a9ae89b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e9b194c3a95a856478d2f4989175ca10.setIcon(icon_dbc24d3fe9e0bc22c82aafd24a9ae89b);
+        
+    
+        var popup_a57aaa7d6523c9b78ab9a25ce497266e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1622c02691195c4d379a06845311ed4 = $(`<div id="html_b1622c02691195c4d379a06845311ed4" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_a57aaa7d6523c9b78ab9a25ce497266e.setContent(html_b1622c02691195c4d379a06845311ed4);
+            
+        
+
+        marker_e9b194c3a95a856478d2f4989175ca10.bindPopup(popup_a57aaa7d6523c9b78ab9a25ce497266e)
+        ;
+
+        
+    
+    
+            var marker_7168e727698c9f0975d80943288ca362 = L.marker(
+                [37.76302933197032, -122.41024411579504],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_0aff70dd04bda9c41df47d6a2a941196 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7168e727698c9f0975d80943288ca362.setIcon(icon_0aff70dd04bda9c41df47d6a2a941196);
+        
+    
+        var popup_6735316313f2f8d8f13ae7bda31cbf71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3aae89583607f547c95bbcc3092ef9d0 = $(`<div id="html_3aae89583607f547c95bbcc3092ef9d0" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_6735316313f2f8d8f13ae7bda31cbf71.setContent(html_3aae89583607f547c95bbcc3092ef9d0);
+            
+        
+
+        marker_7168e727698c9f0975d80943288ca362.bindPopup(popup_6735316313f2f8d8f13ae7bda31cbf71)
+        ;
+
+        
+    
+    
+            var marker_dae204897b48cd30fee4e7356d5d66a2 = L.marker(
+                [37.75170472967116, -122.42743741452496],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_0b9fea2deb4a7b54dc54c1cf0e04af83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dae204897b48cd30fee4e7356d5d66a2.setIcon(icon_0b9fea2deb4a7b54dc54c1cf0e04af83);
+        
+    
+        var popup_1954de4f09a147ef50b3ab9051f9464f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_788a182c5a6db05c022d3e932cafb79e = $(`<div id="html_788a182c5a6db05c022d3e932cafb79e" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_1954de4f09a147ef50b3ab9051f9464f.setContent(html_788a182c5a6db05c022d3e932cafb79e);
+            
+        
+
+        marker_dae204897b48cd30fee4e7356d5d66a2.bindPopup(popup_1954de4f09a147ef50b3ab9051f9464f)
+        ;
+
+        
+    
+    
+            var marker_95ca408ed4af175e1dfe1d20c533a9c9 = L.marker(
+                [37.77210825726729, -122.430433919088],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_40caae6736b7b8d20e1269674acb815b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_95ca408ed4af175e1dfe1d20c533a9c9.setIcon(icon_40caae6736b7b8d20e1269674acb815b);
+        
+    
+        var popup_30e369ffa43f0c32b17ee78c308e4533 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90a9589e140f2574ce00d9177aed5e6b = $(`<div id="html_90a9589e140f2574ce00d9177aed5e6b" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_30e369ffa43f0c32b17ee78c308e4533.setContent(html_90a9589e140f2574ce00d9177aed5e6b);
+            
+        
+
+        marker_95ca408ed4af175e1dfe1d20c533a9c9.bindPopup(popup_30e369ffa43f0c32b17ee78c308e4533)
+        ;
+
+        
+    
+    
+            var marker_53b6d417db95f2c339b6dc7f334ad5b1 = L.marker(
+                [37.78574398866823, -122.4058310124795],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_81a49946caab412d716adeaca3c4d3f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_53b6d417db95f2c339b6dc7f334ad5b1.setIcon(icon_81a49946caab412d716adeaca3c4d3f1);
+        
+    
+        var popup_c934942b0fa12802d9927f3b6d4f1ba9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8a48ba9bd8ac3c9ad3afc77eedb5e88 = $(`<div id="html_c8a48ba9bd8ac3c9ad3afc77eedb5e88" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_c934942b0fa12802d9927f3b6d4f1ba9.setContent(html_c8a48ba9bd8ac3c9ad3afc77eedb5e88);
+            
+        
+
+        marker_53b6d417db95f2c339b6dc7f334ad5b1.bindPopup(popup_c934942b0fa12802d9927f3b6d4f1ba9)
+        ;
+
+        
+    
+    
+            var marker_97c53dbcb9bd39db407aec03c2a4ca9e = L.marker(
+                [37.72120583892469, -122.48302284569624],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_b35abd8f56f9fec464092029ccc7069d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_97c53dbcb9bd39db407aec03c2a4ca9e.setIcon(icon_b35abd8f56f9fec464092029ccc7069d);
+        
+    
+        var popup_5e77c53dc1ecedf84f224b5c364da9af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa85f8b71a861597ca376a86d8c523c2 = $(`<div id="html_aa85f8b71a861597ca376a86d8c523c2" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_5e77c53dc1ecedf84f224b5c364da9af.setContent(html_aa85f8b71a861597ca376a86d8c523c2);
+            
+        
+
+        marker_97c53dbcb9bd39db407aec03c2a4ca9e.bindPopup(popup_5e77c53dc1ecedf84f224b5c364da9af)
+        ;
+
+        
+    
+    
+            var marker_8ae1516095594a60215cfb49d319a586 = L.marker(
+                [37.78641773044466, -122.45340664826642],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_68aeff5b18bfb9a2f87a167a6f88d210 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8ae1516095594a60215cfb49d319a586.setIcon(icon_68aeff5b18bfb9a2f87a167a6f88d210);
+        
+    
+        var popup_51a9c2c45258d77d2b1025e84cb4e0b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_650ecf3fefb189f02763bb592d6bfbdd = $(`<div id="html_650ecf3fefb189f02763bb592d6bfbdd" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_51a9c2c45258d77d2b1025e84cb4e0b3.setContent(html_650ecf3fefb189f02763bb592d6bfbdd);
+            
+        
+
+        marker_8ae1516095594a60215cfb49d319a586.bindPopup(popup_51a9c2c45258d77d2b1025e84cb4e0b3)
+        ;
+
+        
+    
+    
+            var marker_5e77139428ebe56940f10b3c73ad5520 = L.marker(
+                [37.7868345113598, -122.41234030428764],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_1916c755287c7883879210c3cb5020fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5e77139428ebe56940f10b3c73ad5520.setIcon(icon_1916c755287c7883879210c3cb5020fb);
+        
+    
+        var popup_419025a514e562d9c57998fa1219491d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_387cde7e5252b126dc1ee06d621a72e2 = $(`<div id="html_387cde7e5252b126dc1ee06d621a72e2" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_419025a514e562d9c57998fa1219491d.setContent(html_387cde7e5252b126dc1ee06d621a72e2);
+            
+        
+
+        marker_5e77139428ebe56940f10b3c73ad5520.bindPopup(popup_419025a514e562d9c57998fa1219491d)
+        ;
+
+        
+    
+    
+            var marker_dc7329605eb149f35255ddfe9f3d9901 = L.marker(
+                [37.75054040415981, -122.41993366467656],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_bfc1137bfdb139c08a00657e2bf6002a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dc7329605eb149f35255ddfe9f3d9901.setIcon(icon_bfc1137bfdb139c08a00657e2bf6002a);
+        
+    
+        var popup_a6eb77f376186f2774dc0b483f94e8ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_072a5408cc3d7e14da6e2d858688d89d = $(`<div id="html_072a5408cc3d7e14da6e2d858688d89d" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_a6eb77f376186f2774dc0b483f94e8ae.setContent(html_072a5408cc3d7e14da6e2d858688d89d);
+            
+        
+
+        marker_dc7329605eb149f35255ddfe9f3d9901.bindPopup(popup_a6eb77f376186f2774dc0b483f94e8ae)
+        ;
+
+        
+    
+    
+            var marker_8cca772436495c6688b39e120b5019c8 = L.marker(
+                [37.786851765709, -122.3939209435326],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_accdd76e50f1c4068f4eae3fe3aa7e4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8cca772436495c6688b39e120b5019c8.setIcon(icon_accdd76e50f1c4068f4eae3fe3aa7e4f);
+        
+    
+        var popup_59ca9f2367cb541836ac2e180e7d92e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36bc9018956bb5479c0a43e4d6992348 = $(`<div id="html_36bc9018956bb5479c0a43e4d6992348" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_59ca9f2367cb541836ac2e180e7d92e3.setContent(html_36bc9018956bb5479c0a43e4d6992348);
+            
+        
+
+        marker_8cca772436495c6688b39e120b5019c8.bindPopup(popup_59ca9f2367cb541836ac2e180e7d92e3)
+        ;
+
+        
+    
+    
+            var marker_ff629e3d01254cd3bfcf2e96ba506139 = L.marker(
+                [37.74424514163156, -122.43117977060555],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_69430b81761a14998b23daa11451cb47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ff629e3d01254cd3bfcf2e96ba506139.setIcon(icon_69430b81761a14998b23daa11451cb47);
+        
+    
+        var popup_382d9869bf95a8546b9b65e11fa2a197 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd4e1aefbc4448cfe621ff976cceb221 = $(`<div id="html_bd4e1aefbc4448cfe621ff976cceb221" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_382d9869bf95a8546b9b65e11fa2a197.setContent(html_bd4e1aefbc4448cfe621ff976cceb221);
+            
+        
+
+        marker_ff629e3d01254cd3bfcf2e96ba506139.bindPopup(popup_382d9869bf95a8546b9b65e11fa2a197)
+        ;
+
+        
+    
+    
+            var marker_87669c40d370628b20b022fd8dfabf89 = L.marker(
+                [37.77769841953334, -122.39574395575234],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_bcaabfe2eb84d7de1fbcd96b58de378e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_87669c40d370628b20b022fd8dfabf89.setIcon(icon_bcaabfe2eb84d7de1fbcd96b58de378e);
+        
+    
+        var popup_bcbd6a3c39ccb2680e8927d4adb257ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fcefb48b2c082e747155640c81ade8bf = $(`<div id="html_fcefb48b2c082e747155640c81ade8bf" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_bcbd6a3c39ccb2680e8927d4adb257ec.setContent(html_fcefb48b2c082e747155640c81ade8bf);
+            
+        
+
+        marker_87669c40d370628b20b022fd8dfabf89.bindPopup(popup_bcbd6a3c39ccb2680e8927d4adb257ec)
+        ;
+
+        
+    
+    
+            var marker_b8dad0f4c2dbb03889f9ccabc8cee61c = L.marker(
+                [37.77283775646927, -122.40968304216152],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_7ee5a199563d69265fd3d23d932f504e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b8dad0f4c2dbb03889f9ccabc8cee61c.setIcon(icon_7ee5a199563d69265fd3d23d932f504e);
+        
+    
+        var popup_3bbfc1551fab9f9e47662ed8b6527493 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1df410db4ed2942701abcb14a319b32b = $(`<div id="html_1df410db4ed2942701abcb14a319b32b" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_3bbfc1551fab9f9e47662ed8b6527493.setContent(html_1df410db4ed2942701abcb14a319b32b);
+            
+        
+
+        marker_b8dad0f4c2dbb03889f9ccabc8cee61c.bindPopup(popup_3bbfc1551fab9f9e47662ed8b6527493)
+        ;
+
+        
+    
+    
+            var marker_c8a0441547b82f329f7ffe4fdc82c8f0 = L.marker(
+                [37.71192004383376, -122.4378111052428],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_f3908c9fa6a56a834ba7832d506a2ca9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c8a0441547b82f329f7ffe4fdc82c8f0.setIcon(icon_f3908c9fa6a56a834ba7832d506a2ca9);
+        
+    
+        var popup_e7d77411684b96b393310bbd5f396af0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ec650c4cac5fd10cbf942135e086926 = $(`<div id="html_3ec650c4cac5fd10cbf942135e086926" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_e7d77411684b96b393310bbd5f396af0.setContent(html_3ec650c4cac5fd10cbf942135e086926);
+            
+        
+
+        marker_c8a0441547b82f329f7ffe4fdc82c8f0.bindPopup(popup_e7d77411684b96b393310bbd5f396af0)
+        ;
+
+        
+    
+    
+            var marker_aac431103e362ed33be6bf8b65bef09e = L.marker(
+                [37.72403561263169, -122.40210839224032],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_888c001c20ff2f46f6799fc9d90bd112 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aac431103e362ed33be6bf8b65bef09e.setIcon(icon_888c001c20ff2f46f6799fc9d90bd112);
+        
+    
+        var popup_870fa97b4fa8d2ba24ab818b9dc92d66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68b059c92b68e09d2d1fd132c4e4042f = $(`<div id="html_68b059c92b68e09d2d1fd132c4e4042f" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_870fa97b4fa8d2ba24ab818b9dc92d66.setContent(html_68b059c92b68e09d2d1fd132c4e4042f);
+            
+        
+
+        marker_aac431103e362ed33be6bf8b65bef09e.bindPopup(popup_870fa97b4fa8d2ba24ab818b9dc92d66)
+        ;
+
+        
+    
+    
+            var marker_228bb4b87622fc36028e4632b7b91689 = L.marker(
+                [37.77871942789032, -122.4147412230519],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_18f42cfb7951c86a3ececf27111b973f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_228bb4b87622fc36028e4632b7b91689.setIcon(icon_18f42cfb7951c86a3ececf27111b973f);
+        
+    
+        var popup_32b1323693d64a49fc8f24962416252f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1f94f7cab885bec777744335743f35e = $(`<div id="html_d1f94f7cab885bec777744335743f35e" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_32b1323693d64a49fc8f24962416252f.setContent(html_d1f94f7cab885bec777744335743f35e);
+            
+        
+
+        marker_228bb4b87622fc36028e4632b7b91689.bindPopup(popup_32b1323693d64a49fc8f24962416252f)
+        ;
+
+        
+    
+    
+            var marker_fc0de0439707f93550faea94fb625049 = L.marker(
+                [37.74974559899618, -122.39627354527164],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_983719cc638e7bc83bed5314da099332 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fc0de0439707f93550faea94fb625049.setIcon(icon_983719cc638e7bc83bed5314da099332);
+        
+    
+        var popup_d40c6261de19e6b01ec695f74fcfa7e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19c67c729b2f421d89235171df351266 = $(`<div id="html_19c67c729b2f421d89235171df351266" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_d40c6261de19e6b01ec695f74fcfa7e8.setContent(html_19c67c729b2f421d89235171df351266);
+            
+        
+
+        marker_fc0de0439707f93550faea94fb625049.bindPopup(popup_d40c6261de19e6b01ec695f74fcfa7e8)
+        ;
+
+        
+    
+    
+            var marker_b878990488a4ca94d316c2832b5e5032 = L.marker(
+                [37.730318019697776, -122.40470639531522],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_36f5ac5ce5553572dc826db96ca3e095 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b878990488a4ca94d316c2832b5e5032.setIcon(icon_36f5ac5ce5553572dc826db96ca3e095);
+        
+    
+        var popup_08d2cfb71e87ed5a804f705afc77c442 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58dd7e5b1b8893c91190000e2059d666 = $(`<div id="html_58dd7e5b1b8893c91190000e2059d666" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_08d2cfb71e87ed5a804f705afc77c442.setContent(html_58dd7e5b1b8893c91190000e2059d666);
+            
+        
+
+        marker_b878990488a4ca94d316c2832b5e5032.bindPopup(popup_08d2cfb71e87ed5a804f705afc77c442)
+        ;
+
+        
+    
+    
+            var marker_9b9ad58417620c82e5c9f548aa864232 = L.marker(
+                [37.79855245267023, -122.42398214567396],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_0e01aed79d1db1ab1685f2ec7bddf740 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9b9ad58417620c82e5c9f548aa864232.setIcon(icon_0e01aed79d1db1ab1685f2ec7bddf740);
+        
+    
+        var popup_6b0ceeead9e8f26a35408ac6ff818d0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d089f90763df430312d200bb678db57 = $(`<div id="html_0d089f90763df430312d200bb678db57" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_6b0ceeead9e8f26a35408ac6ff818d0f.setContent(html_0d089f90763df430312d200bb678db57);
+            
+        
+
+        marker_9b9ad58417620c82e5c9f548aa864232.bindPopup(popup_6b0ceeead9e8f26a35408ac6ff818d0f)
+        ;
+
+        
+    
+    
+            var marker_0be38a384c58854a01d241b313e8b6e3 = L.marker(
+                [37.74239176061754, -122.40583815976386],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_58316dfcd1fcaa4fa34ad28a3e47bb6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0be38a384c58854a01d241b313e8b6e3.setIcon(icon_58316dfcd1fcaa4fa34ad28a3e47bb6d);
+        
+    
+        var popup_eb2a94300d43f951c5d0b5e03ae97566 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1dd52a13a39677561c43b93d1b2c203 = $(`<div id="html_e1dd52a13a39677561c43b93d1b2c203" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_eb2a94300d43f951c5d0b5e03ae97566.setContent(html_e1dd52a13a39677561c43b93d1b2c203);
+            
+        
+
+        marker_0be38a384c58854a01d241b313e8b6e3.bindPopup(popup_eb2a94300d43f951c5d0b5e03ae97566)
+        ;
+
+        
+    
+    
+            var marker_75f2fac65f92430ea33cfb660ef0bfd7 = L.marker(
+                [37.78258503232177, -122.41569387441228],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_cacbbcfe713e6da287e6b369de2a3356 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_75f2fac65f92430ea33cfb660ef0bfd7.setIcon(icon_cacbbcfe713e6da287e6b369de2a3356);
+        
+    
+        var popup_ca47fc49208bab4a19842061c6fb5c0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac34bbb1d99047b07a0941bd6193f766 = $(`<div id="html_ac34bbb1d99047b07a0941bd6193f766" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_ca47fc49208bab4a19842061c6fb5c0c.setContent(html_ac34bbb1d99047b07a0941bd6193f766);
+            
+        
+
+        marker_75f2fac65f92430ea33cfb660ef0bfd7.bindPopup(popup_ca47fc49208bab4a19842061c6fb5c0c)
+        ;
+
+        
+    
+    
+            var marker_a146a78d2ca2fbe85323b5b8488f0346 = L.marker(
+                [37.730318019697776, -122.40470639531522],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_cfd7af746b4db91216b7685277f65cd3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a146a78d2ca2fbe85323b5b8488f0346.setIcon(icon_cfd7af746b4db91216b7685277f65cd3);
+        
+    
+        var popup_d44ad685f5aca0c23f66c92fd9c30b4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5621bbf8cb6eb6cbb001acc45ce29059 = $(`<div id="html_5621bbf8cb6eb6cbb001acc45ce29059" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_d44ad685f5aca0c23f66c92fd9c30b4a.setContent(html_5621bbf8cb6eb6cbb001acc45ce29059);
+            
+        
+
+        marker_a146a78d2ca2fbe85323b5b8488f0346.bindPopup(popup_d44ad685f5aca0c23f66c92fd9c30b4a)
+        ;
+
+        
+    
+    
+            var marker_e0943d3eedde5195c74d720004c4e6b4 = L.marker(
+                [37.80044505976436, -122.40918981932036],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_e0794f7bab81169654275663db751d14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e0943d3eedde5195c74d720004c4e6b4.setIcon(icon_e0794f7bab81169654275663db751d14);
+        
+    
+        var popup_993e7cc484cc1b91c881f952e9e25b3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0c1684bf70010c13b38bc4848daf2f3 = $(`<div id="html_d0c1684bf70010c13b38bc4848daf2f3" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_993e7cc484cc1b91c881f952e9e25b3d.setContent(html_d0c1684bf70010c13b38bc4848daf2f3);
+            
+        
+
+        marker_e0943d3eedde5195c74d720004c4e6b4.bindPopup(popup_993e7cc484cc1b91c881f952e9e25b3d)
+        ;
+
+        
+    
+    
+            var marker_78813ebc916ba974275eb39c52c83b33 = L.marker(
+                [37.76088893209152, -122.4350007026991],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_7488b5f7ac886acbaa8f2a2ae7f0c227 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_78813ebc916ba974275eb39c52c83b33.setIcon(icon_7488b5f7ac886acbaa8f2a2ae7f0c227);
+        
+    
+        var popup_4dc2d72c7dec1ec8c656040d03ad8b5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ec0d2f48f6e7638419018cc077310ed = $(`<div id="html_4ec0d2f48f6e7638419018cc077310ed" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_4dc2d72c7dec1ec8c656040d03ad8b5f.setContent(html_4ec0d2f48f6e7638419018cc077310ed);
+            
+        
+
+        marker_78813ebc916ba974275eb39c52c83b33.bindPopup(popup_4dc2d72c7dec1ec8c656040d03ad8b5f)
+        ;
+
+        
+    
+    
+            var marker_d6d431bcd92fc7e52f44fc776667c387 = L.marker(
+                [37.78640961281089, -122.40803623744476],
+                {}
+            ).addTo(map_b63cdd9ebbe94042d5ca20273e5d01bd);
+        
+    
+            var icon_0adac638441dd28149ab0a3a65b99ef7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d6d431bcd92fc7e52f44fc776667c387.setIcon(icon_0adac638441dd28149ab0a3a65b99ef7);
+        
+    
+        var popup_680f019a39da13709cb16b4799672227 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a998d69185e8c59b28d5052ba4f4b7e = $(`<div id="html_2a998d69185e8c59b28d5052ba4f4b7e" style="width: 100.0%; height: 100.0%;">Robbery</div>`)[0];
+                popup_680f019a39da13709cb16b4799672227.setContent(html_2a998d69185e8c59b28d5052ba4f4b7e);
+            
+        
+
+        marker_d6d431bcd92fc7e52f44fc776667c387.bindPopup(popup_680f019a39da13709cb16b4799672227)
+        ;
+
+        
+    
+</script>
+</html>
